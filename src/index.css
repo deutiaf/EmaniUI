@@ -1,0 +1,119 @@
+:root{
+ --text-color-black:#000000;
+ --text-color-white:#ffffff;
+ --text-color-black2:#1e1e1e;
+ --text-color-gray:#818c96;
+ --text-color-green:#9fe870;
+
+ --bg-color-white:#ffffff;
+ --bg-color-black3:#1e1e1e;
+ --bg-color-green:#9fed61;
+ --bg-color-gray:#d7d7d7;
+ --bg-color-black2:#191c1f;
+ --bg-color-black:#000000;
+
+}
+
+html{
+  font-size: 20px;
+}
+*,*::after,*::before{
+  box-sizing: border-box;
+}
+
+body{
+
+  margin: 0;
+  width: 100%;
+  color: var(--text-color-black);
+  font-family: sans-serif;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section{
+  padding: 2rem 4rem;
+  margin: 1rem;
+}
+
+h3{
+color: var(--text-color-black);
+}
+h2{
+  color: var(--text-color-black2);
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: var(--text-color-white);
+  font-weight: bold;
+
+}
+ul{
+  padding: 0;
+  margin: .5rem;
+}
+button{
+  border: none;
+  cursor: pointer;}
+
+
+
+
+
+
+  /* *********************   MEDIA QUERIE  ************************** */
+    /* +++++++++++++++++++ BREAKPOINTS +++++++++++++++ */
+/* ++++++++++++++++++++ RESPONSIVE TYPOGRAPHY +++++++++++++++++++++ */
+
+@media screen and (max-width: 1400px) {
+  html{
+    font-size: 16px;
+  }
+ }
+
+@media screen and (max-width: 992px) {
+  :root{
+
+  }  
+
+  
+  
+
+ }
+
+   /* ++++++++++++++++ FOR LARGE TABLETTE +++++++++++++ */
+   
+   
+   @media screen and (max-width: 768px) {
+    
+   }
+   /* +++++++++++++++++++ FOR MEDIUM DEVICES +++++++++++++++++++++++++++ */
+
+   @media screen and (max-width: 576px) {
+    html{
+      font-size: 14px;
+  }
+    main{
+        overflow-x: hidden;
+    }
+   }
+   /* +++++++++++++++++++++ FOR SMALL DEVICES++++++++++++++++++++++++ */
+
+   @media screen and (max-width: 375px) {
+    :root{
+
+    }
+    html{
+      font-size:12px ;
+    }
+    
+   }

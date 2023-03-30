@@ -1,0 +1,553 @@
+.hero{
+    background-color:var(--bg-color-black);
+    height: 145vh;
+    position: relative;
+    overflow: hidden;
+}
+.design{
+    position: absolute;
+    top: 0;
+    right: 0rem;
+    left: 70%;
+    bottom: 0;
+    border:7px solid hsla(150, 40%, 40%,0.2) ;
+    transform: skewY(-25deg);
+    
+}
+.design1{
+    top: 10%;
+    left: 50%;   
+    height: 20rem;
+    width: 30rem;
+
+}
+
+
+.design2{
+    top: 20%;
+    left: 60%;   
+    height: 25rem;
+    width: 50rem;
+}
+
+
+.design3{
+    top: 70%;
+    left: 40%;   
+    height: 22rem;
+    width: 40rem;
+
+
+}
+.designWrapper{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:transparent;
+    z-index: 1;
+
+    
+}
+
+/* NAVBAR */
+
+.navbar{
+    justify-content: space-between;
+    margin-top: 0;
+    z-index: 11;
+    position: relative;
+}
+ .status{
+    margin-left: 1rem;
+ }
+
+.status li{
+    list-style: none;
+    margin:0 1rem;  
+}
+
+.status ul{
+    width: 100%;
+    justify-content: flex-start;
+}
+.status a{
+    position: relative;
+    z-index: 1111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.status .active{
+    color: var(--text-color-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.status .active::after{
+    z-index: -11;
+    top: -0.5rem;
+    bottom: 0;
+    right: 0;
+    left: -0.8rem;
+    position: absolute;
+    display: block;
+    content: '';
+    height: 2rem;
+    width: 6rem;
+    background:var(--bg-color-green);
+    border-radius: 30px;
+}
+
+.vector{
+    margin: 0 0.6rem;
+    height: 15px;
+    width: 15px;
+    background:var(--bg-color-white);
+    border-radius: 50%;
+    box-shadow:  0px 0px 0px 4px black,
+                0px 0px 0px 6px white;
+}
+.brand{
+    color: var(--text-color-white);
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+.navbarRight > ul li{
+   margin: 0 .5rem; 
+   color: var(--text-color-white);
+}
+.navbarRight a:hover{
+    color: gainsboro;
+}
+
+.arrow{
+display: inline-block;
+color: var(--text-color-white);
+transform: rotate(90deg);
+margin: 0rem .2rem ;
+
+}
+.navbarRight > ul li:last-child a{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+/* HOME */
+.home{
+    color: var(--text-color-white);
+    z-index: 11;
+    position: relative;
+    margin: auto 0px;
+    height: 80vh;
+    flex-direction: column;
+    align-items:stretch;
+    justify-content: space-between;
+}
+
+.description{
+    justify-content: space-between;
+}
+.description h1{
+    font-size: 5.5rem;
+    white-space: nowrap;
+}
+.buttons{
+flex: 0 1 30%;
+
+}
+.buttons p{
+    line-height: 1.5rem;
+}
+.buttonGroup{
+    gap: 0.5rem;
+}
+.button1{
+    color: var(--text-color-black);
+    font-size:2rem ;
+    font-weight: bold;
+    flex: 0 1 80%;   
+    background-color: var(--bg-color-green);
+    height: 5rem;
+    border-radius: 5rem;
+    transition: transform 0.5s;
+
+}
+.button1:hover{
+    transform: translateY(-0.5rem);
+    transition: transform 0.5s;
+
+}
+
+.play{
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    background:var(--bg-color-black3);
+    position: relative;  
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    transition: transform 0.3s;
+
+
+}
+.play:hover{
+ transform: scale(1.15);
+ transition: transform 0.3s;
+}
+.play div{
+   
+    height: 2rem;
+    width: 2rem;
+    border: 1.3rem solid var(--bg-color-white);
+    border-top-color: transparent;
+    border-left-color: transparent;
+    
+    position: absolute;
+    top:1.2rem;
+    right:0rem;
+    left:0.5rem;
+    bottom:0;
+    transform:  scaleY(0.6)
+                rotate(-45deg);
+}
+
+.users-panel{
+    justify-content: flex-end;
+    gap: 0.5rem;
+    padding-right: 5.5rem;    
+    height: 6rem;
+    margin-top: 0;
+    
+}
+.total-users{
+    margin:  2.5rem 0 0;
+    font-size: 2rem;
+    font-weight: bold; 
+}
+.avatars{
+    position: relative;
+}
+.avatars img{
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid var(--text-color-black);
+    cursor: pointer;
+
+}
+.avatars img:hover{
+    z-index: 1111;
+    transform: translateY(-0.3rem);
+    transition: transform 0.3s;
+}
+.avatars img:first-of-type{
+    right:3rem;
+}
+.avatars img:nth-of-type(2){
+    right:1.5rem;
+}
+.avatars img:last-of-type{
+    right:0rem;
+
+}
+.actif-users{
+    justify-content: flex-end;
+    margin:0.5rem 0rem 0 0rem;
+}
+.online-icon{
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: red;
+    margin: 0.2rem;
+}
+.scrollTag{
+    font-weight: bold;
+    transition: 1s;
+    margin-bottom: 4rem;
+}
+.opacityScroll{
+    opacity: 0;
+    transition: 1s;
+}
+.turn{
+    animation: scrollArrow 1s infinite;
+
+}
+.scrollArrow{
+    transform: rotate(90deg);
+    display: inline-block;
+    margin-left:0.4rem ; 
+
+}
+
+@keyframes scrollArrow{
+    from{
+        transform: translateY(-3px) ;
+        opacity: 0.7;
+    }
+    to{
+        transform: translateY(3px);
+        opacity: 1;
+    }
+
+}
+.path{
+    position: absolute;
+    height: 40vh;
+    width: 100%;
+    top: 120%;
+    bottom: 0;
+    right: 0;
+    left: 0rem;
+    margin: 0;
+    padding: 0;
+    align-items: flex-start;
+    z-index: 11111111;
+    overflow: hidden;
+
+
+
+    
+}
+.bitmap{
+    position: absolute;
+    top: -500px;
+}
+#svg272{
+    transform: scale(8.5,6);
+    position: absolute;
+    z-index: 111111111111;
+    top: -10%;
+    left: 3%;
+
+}
+#layer1{
+    position: absolute;
+}
+.path>div{
+    flex: 0 0 auto;
+}
+.band{
+    height: 100%;
+    width: 45%;
+    background: var(--bg-color-white);
+    position: absolute;
+    
+
+}
+.bandRight{
+    left: 0;
+    border-top-right-radius: 45% 90%;
+}
+
+.bandLeft{
+    right: 0;
+    border-top-left-radius: 45% 90%;
+
+}
+.circle{
+
+    height: 12rem;
+    width: 19rem;
+    background: transparent;
+    border:30px solid white;
+    border-radius: 50% ;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    position: relative;
+    z-index: 1111;
+    box-shadow: 0px 100px 0px 10px white;   
+    position: relative;
+    top:5.3rem;
+
+}
+.circle::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0rem;
+    height: 100%;
+    background-color: white;
+    
+}
+
+/* Card */
+.card{
+
+    position: absolute;
+    height:30rem;
+    width: 60%;
+    z-index: 1;
+    top: 150%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: 1s;
+    
+}
+.cardUp{
+    top: 40%;
+    transition: 1s;
+ 
+}
+.card > img{
+    height: 55rem;
+    position: absolute;
+    transition: 1s;   
+}
+.card > img:first-of-type{
+    left: -20%;
+    top: 2%;
+    transform: rotate(-30deg);
+
+}
+.card > img:last-of-type{
+    left: 30%;
+    top: 10%;
+    transform: rotate(30deg);
+
+}
+.cards{
+    transform: rotate(0deg) !important;
+    transition: 1s 0.2s !important;
+
+}
+
+.cardCircle{
+    border-radius: 50%;
+    height: 11rem;
+    width: 11rem;
+    background:var(--bg-color-black);
+    position: absolute;
+    color: var(--text-color-white);
+    top: 45%;
+    font-weight: bold;
+    padding: 1.5rem;
+    text-align: center;
+    line-height: 11px;
+    transition: 1s;
+    transform: rotate(40deg);
+
+    
+}
+
+.cardCircle img:first-child{
+  height: 120%;
+  
+}
+
+.triangle{
+        position:absolute;
+
+
+}
+.cardCircleTurn{
+    transform: rotate(0deg);
+    transition: 1s 0.6s;
+}
+
+
+
+
+
+
+
+
+
+/* ++++++++++++++++++++++++++ MEDIA QUERIES   ++++++++++++ */
+
+
+@media screen and (max-width: 992px) {
+    :root{
+  
+    }  
+    
+    .description{
+        flex-direction: column;
+    }
+   .buttons{
+        width: 80%;
+   }
+   .buttons >p{
+    text-align: center;
+   }
+
+   .buttonGroup{
+    flex-direction: column;
+   }
+   .button1{
+    width: 100%;
+    margin: 1rem;
+    padding: 1.5rem;
+   }
+   .card > img:first-of-type{
+    left:-45%
+   }
+   .hero{
+    height: 140vh;
+   }
+   }
+  
+     /* ++++++++++++++++ FOR LARGE TABLETTE +++++++++++++ */
+     
+     @media screen and (max-width: 768px) {
+      .navbar{
+        padding: 2rem 0.5rem;
+      }
+     }
+     /* +++++++++++++++++++ FOR MEDIUM DEVICES +++++++++++++++++++++++++++ */
+  
+     @media screen and (max-width: 576px) {
+        
+        .navbarRight{
+            display: none;
+        }
+        .description h1{
+            font-size: 3rem;
+        }
+        .card > img:last-of-type{
+            left: 0%;
+            top: 40%;
+        }
+        .card > img:first-of-type{
+            left: -60%;
+            top: 40%;
+        }
+
+        .card > img{
+            height: 30rem;
+            top: 20%;
+        }
+        .hero{
+            height: 141vh;
+           }
+        
+     }
+     /* +++++++++++++++++++++ FOR SMALL DEVICES++++++++++++++++++++++++ */
+  
+     @media screen and (max-width: 375px) {
+      :root{
+  
+      }
+      
+      .hero{
+        height: 143vh;
+      }
+      .users{
+        margin: auto;     
+     }
+     .actif-users{
+        margin-top: 2rem;
+     }
+      
+     }
