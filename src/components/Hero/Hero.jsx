@@ -29,7 +29,6 @@ const Hero = () => {
 
 
       }
-      console.log(entry)
     },options)
     observer.observe(document.querySelector('.online-icon'))
   

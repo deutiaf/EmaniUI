@@ -128,9 +128,150 @@
 
 
 
+/* ++++++++++++++++++++ FEATURE 3 +++++++++++++++++++++++++ */
+.feature3{
+    width: 100%;
+    gap: 3rem;
+}
+
+.population , .population>div   {
+    border-radius: 5rem;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+}
+.population:hover .popCard2{
+    transform: translateY(0%);
+    transition: 0.4s;
+
+}
+.population   {
+    position: relative;
+    height: 400px;
+    width: 33%;
+    text-align: center;
+    background-color: var(--bg-color-gray);
+    overflow: hidden;
+    
+
+}
+.popCard3{
+    padding: 5rem 2rem;
+    
+
+}
+.population:hover .popCard3,.population:hover .popCard3 h3,.population:hover .popCard3 p{
+    transition: 1s;
+    color: white !important;
+
+}
+.popCard2{
+    background-color: var(--text-color-black);
+    transform: translateY(100%);
+    transition: 0.4s;
 
 
+}
 
+.popCard3 h3{
+    font-size: 5rem;
+    margin: 0;
+    color: var(--text-color-black);
+}
+.popCard3 p{
+    font-size: 1.5rem;
+    margin: 0;
+    color: var(--text-color-black);
+    padding-top: 2rem;
+}
+
+
+/* ++++++++++++++++++++++++   FEATURE 4  ++++++++++++++++++++++++++++ */
+.feature4{
+    width: 100%;
+    background-color:var(--text-color-black);
+    border-radius: 5rem;
+    margin-top: 8rem;
+    padding: 5rem 7rem 8rem;
+    height: 600px;
+    overflow: hidden;
+
+}
+.feature4 >div{
+    flex: 1 1 50%;
+}
+.feature4 h3{
+    color: var(--text-color-white);
+    font-size: 2rem;
+}
+.ft4Left{
+    transform: translateX(-150%);
+    transition: 1s;
+}
+.ft4LeftAdd{
+    transform: translateX(0%);
+    transition: 1s;
+}
+
+.ft4Left p:first-of-type{
+    color: var(--text-color-gray);
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.ft4Left a{
+    color: var(--text-color-green);
+    font-size: 1.3rem;
+    font-weight: normal;
+    
+}
+.ft4Left span{
+    color: var(--text-color-green);
+
+}
+.ft4Left a:hover span{
+    transform: translateX(10px);
+    display: inline-block;
+    transition: 0.5s;
+}
+.ft4Right{
+    position: relative;flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: 15rem;
+}
+
+.ft4Right img:first-of-type{
+    transform-origin: top left;
+    transform:  rotate(-80deg);
+    transition: 1s;
+    margin-left: 15rem;
+
+}
+.ft4RightTurn1{
+    transform: rotate(0deg) !important;
+    transition: 1s;
+    
+}
+
+.ft4Right img:last-of-type{
+    transform-origin: bottom left;
+    transform:  rotate(80deg);
+    transition: 1s;    
+}
+
+.ft4RightTurn2{
+    transform: rotate(0deg) !important;
+    transition: 1s;
+    
+}
 
 /* ***************** MEDIA QUERIES ***************** */
 @media screen and (max-width: 1120px) {
@@ -139,6 +280,10 @@
 
         .ftButton1{
             flex: auto;
+        }
+
+        .ft4Right{
+            width: 20%;
         }
 }
 
@@ -169,7 +314,29 @@
   .feature2{
     padding: 5rem 0;
   }
+  .feature3{
+    gap: 1rem;
+  }
 
+  .popCard3 h3{
+    font-size: 3rem;
+  }
+  .population{
+    height:350px
+  }
+.feature4{
+    width: 110%;
+}
+  .ft4Right{
+    width: 50%;
+    margin-right: 5rem;
+  }
+  .ft4Left{
+    z-index: 11;
+    position: relative;
+    flex: 1 0 70% !important;
+  }
+  
    }
 
 
@@ -177,6 +344,20 @@
      
      
      @media screen and (max-width: 768px) {
+
+        .feature4{
+            position: relative;
+        }
+        .ft4Right{
+            position: absolute;
+            margin-bottom: 0;
+            
+          }
+          .ft4Left{
+            z-index: 11;
+            position: relative;
+            flex: 1 0 100% !important;
+          }
      }
      /* +++++++++++++++++++ FOR MEDIUM DEVICES +++++++++++++++++++++++++++ */
   
@@ -207,6 +388,24 @@
             font-size: 3rem;
             margin-bottom: 3rem;
         }
+        .feature3{
+            flex-direction: column;
+        }
+        .population{
+            width: 90%;
+            height: 250px;
+        }
+
+        .ft4Left {
+            flex: 0 0 170% !important;
+            padding: 0rem 1rem;
+
+            
+        }
+        .ft4Left p{
+            color:dimgray !important;
+        }
+       
      }
      /* +++++++++++++++++++++ FOR SMALL DEVICES++++++++++++++++++++++++ */
   
@@ -217,4 +416,14 @@
       .ft{
         width: 110%;
       }
+
+      .feature4{
+        width: 135%;
+    }
+    .ft4Left {
+        flex: 0 0 170% !important;
+        padding: 1rem 0rem;
+
+        
+    }
      }

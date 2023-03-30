@@ -1,0 +1,72 @@
+.payment{
+   
+    background-color: var(--bg-color-black);
+    margin: auto 0;
+    padding: 5rem 8rem;
+    
+
+}
+.payment >div{
+    flex: 1 1 50%;
+
+}
+.payment1 h4{
+    font-size: 1.7rem;
+    color: var(--text-color-gray);
+    margin: 0 auto;
+
+}
+.payment1 h1{
+    font-size: 3.5rem;
+    color: var(--text-color-white);
+
+}
+.payment1 p{
+    line-height: 3rem;
+    font-size: 1.5rem;
+    color: var(--text-color-white);
+    font-weight: bold;
+    }
+.paymentButton{
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.paymentButton >button{
+    border-radius: 1.3rem;
+    margin: 3rem 0;
+    height: 4rem;
+    flex: 0 1 30%;
+    font-size: 1.3rem;
+    
+}
+
+.paymentButton> button:first-of-type{
+    background-color: hsl(120, 80%, 55%);
+
+}
+.paymentButton> button:last-of-type{
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+
+}
+
+/* +++++++++++++++++++++++++++ PAYMENT 2 +++++++++++++++++++++ */
+.payment2{
+    background-color: var(--bg-color-black3);
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+}
+.payment2>div{
+    margin-bottom: 1rem;
+}
+.payment2 h5{
+    margin: 0;
+}
+.slide1, .slide2{
+    background-color: hsl(10, 90%, 4%);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 1rem;
+}
