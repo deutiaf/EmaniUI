@@ -17,6 +17,8 @@
 html{
   font-size: 20px;
 }
+
+
 *,*::after,*::before{
   box-sizing: border-box;
 }
@@ -26,7 +28,7 @@ body{
   margin: 0;
   width: 100%;
   color: var(--text-color-black);
-  font-family: sans-serif;
+   font-family: 'Poppins', sans-serif;;
 }
 
 .flex{

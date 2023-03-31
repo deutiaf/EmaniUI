@@ -22,6 +22,9 @@
     height: 15rem;
     width: 18rem;
     transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .ft:hover{
     transform: scale(1.4);
@@ -44,16 +47,18 @@
 .ft >p:first-of-type{
     font-size: 0.7rem;
     line-height: 1.2rem;
-    margin-bottom: 1.8rem;
+    margin: 0;
     color: hsl(200, 10%, 25%);
 }
 .ft >p:last-of-type{
     font-size: 0.7rem;
     font-weight: bold;
+    margin: 0;
 }
 .ft h4{
     font-size: 1.1rem;
     color: var(--text-color-black2);
+    margin: 0;
 }
 .ft a{
     color: hsl(200, 10%, 10%);
@@ -104,7 +109,7 @@
    .feature2{
     width: 100%;
     justify-content: space-between;
-    padding: 7rem 5rem;
+    padding: 4rem 5rem;
     align-items: flex-start;
 }
 
@@ -113,10 +118,11 @@
     margin-bottom: 1.5rem;
     width: 60%;
     margin-top: 0;
+    line-height: 3.5rem;
 
 }
 .feature2 p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     color: var(--text-color-gray);
     line-height: 2.5rem;
@@ -186,8 +192,8 @@
 .popCard3 p{
     font-size: 1.5rem;
     margin: 0;
-    color: var(--text-color-black);
-    padding-top: 2rem;
+    color: hsl(200, 10%, 35%);
+    padding-top: 1rem;
 }
 
 
@@ -345,6 +351,21 @@
      
      @media screen and (max-width: 768px) {
 
+        .feature2{
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+
+        .feature2 >*{
+            width: 100% !important;
+            margin-left: 0 !important;
+        }
+        .feature2 h3{
+            font-size: 3rem;
+            margin-bottom: 3rem;
+        }
+        
         .feature4{
             position: relative;
         }
@@ -376,18 +397,7 @@
             transform: scale(1.1);
         }
 
-        .feature2{
-            flex-direction: column;
-            text-align: center;
-        }
-        .feature2 >*{
-            width: 100% !important;
-            margin-left: 0 !important;
-        }
-        .feature2 h3{
-            font-size: 3rem;
-            margin-bottom: 3rem;
-        }
+        
         .feature3{
             flex-direction: column;
         }
@@ -413,8 +423,16 @@
       :root{
   
       }
+
+
+      .feature2 {
+        padding: 2rem 2rem;
+    }
+    
       .ft{
         width: 110%;
+        position: relative;
+        left: -13px;
       }
 
       .feature4{

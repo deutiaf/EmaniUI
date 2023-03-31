@@ -3,6 +3,8 @@
     background-color: var(--bg-color-black);
     margin: auto 0;
     padding: 5rem 8rem;
+    align-items: flex-start;
+    gap: 7rem;
     
 
 }
@@ -22,10 +24,11 @@
 
 }
 .payment1 p{
-    line-height: 3rem;
-    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-size: 1.3rem;
     color: var(--text-color-white);
     font-weight: bold;
+    padding-right: 6rem;
     }
 .paymentButton{
     justify-content: flex-start;
@@ -41,7 +44,7 @@
 }
 
 .paymentButton> button:first-of-type{
-    background-color: hsl(120, 80%, 55%);
+    background-color: var(--bg-color-green);
 
 }
 .paymentButton> button:last-of-type{
@@ -56,17 +59,184 @@
     background-color: var(--bg-color-black3);
     padding: 1rem 1rem;
     border-radius: 1rem;
+    flex: 0 1 35% !important;
+    overflow: hidden;
 }
 .payment2>div{
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 .payment2 h5{
+    font-size: 0.75rem;
     margin: 0;
+    color: var(--text-color-gray);
 }
-.slide1, .slide2{
-    background-color: hsl(10, 90%, 4%);
+.slide1, .slide2,.slide3{
+    background-color: hsl(10,30%, 5%);
     color: white;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     border-radius: 1rem;
+    padding: 1rem 1rem 0rem;
+
 }
+
+.stat{
+    justify-content: space-between;
+}
+.cir{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background:hsl(200, 70%, 8%);
+}
+.stat >div:first-of-type{
+    gap: 0.5rem;
+}
+
+/* ********************** SLIDE 3   **************** */
+.slide3{
+    padding-bottom: 0.1rem;
+    transition-delay: 0.8s;
+}
+.slide3 >div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    font-size: 0.8rem;
+    color: var(--text-color-gray);
+    
+
+}
+.val{
+    color: wheat;
+}
+.des span{
+    text-align: center;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    border: 1px solid var(--text-color-gray);
+    border-radius: 50%;
+    margin-left: 0.4rem;
+
+}
+
+.slide3 >div:nth-of-type(2) .des{
+    color: hsl(230, 60%, 60%);
+}
+
+/* ++++++++++++++++++++++++++++++++++++++  SLIDE 4  ++++++++++++++++++ */
+.slide4 p{
+    text-align: center;
+    margin: 0;
+    color: var(--text-color-gray);
+    line-height: 1.7rem;
+    font-size: 0.8rem;
+}
+
+.slide4 a{
+    
+    color: hsl(230, 60%, 60%);
+   
+}
+.slide4 span{
+    color: var(--text-color-white);
+}
+
+.but{
+    width: 100%;
+    border-radius: 1.3rem;
+    margin: 0rem 0;
+    height: 4rem;
+    flex: 0 1 30%;
+    font-size: 1rem;
+    background-color: var(--bg-color-green);
+    font-weight: bold;
+}
+
+.slide1,.slide3{
+    transform: translateX(-150%);
+    transition: 1s cubic-bezier(0,-0.42, 0.36, 1.37);
+}
+.slideAdd1{
+    transform: translate(0%) !important;
+
+}
+
+.slide2,.slide4{
+    transform: translateX(150%) ;
+    transition: 1s cubic-bezier(0,-0.42, 0.36, 1.37);
+}
+.slide1{
+    transition-delay: 0s;
+}
+.slide2{
+    transition-delay: 0.3s;
+}
+.slide3{
+    transition-delay: 0.6s;
+}
+.slide4{
+    transition-delay: 0.9s;
+}
+
+
+
+/* +++++++++++++++++++++   Media queries   +++++++ */
+
+
+@media screen and (max-width: 1190px) {
+    
+   }
+  
+  @media screen and (max-width: 992px) {
+    .payment{
+        gap: 2rem;
+        padding:5rem 1rem;
+    }
+    .payment1{
+        flex: 0 1 25rem  !important;
+    }
+
+    .payment2{
+        flex: 0 1 25rem  !important;
+    }
+    .paymentButton >button{
+        height: auto;
+        padding: 1rem;
+        font-size: 1.2rem;
+        flex: auto;
+    }
+  
+  
+   }
+  
+     /* ++++++++++++++++ FOR LARGE TABLETTE +++++++++++++ */
+     
+     
+     @media screen and (max-width: 768px) {
+      
+     }
+     /* +++++++++++++++++++ FOR MEDIUM DEVICES +++++++++++++++++++++++++++ */
+  
+     @media screen and (max-width: 576px) {
+        .payment{
+            flex-direction: column;
+        }
+        .payment1{
+            text-align: center;
+        }
+        .payment p{
+            padding: 0;
+        }
+        .payment2{
+            overflow: visible;
+            
+        }
+     
+     }
+     /* +++++++++++++++++++++ FOR SMALL DEVICES++++++++++++++++++++++++ */
+  
+     @media screen and (max-width: 375px) {
+      
+     }

@@ -86,7 +86,7 @@
 }
 .status .active::after{
     z-index: -11;
-    top: -0.5rem;
+    top: -0.2rem;
     bottom: 0;
     right: 0;
     left: -0.8rem;
@@ -146,10 +146,13 @@ margin: 0rem .2rem ;
     flex-direction: column;
     align-items:stretch;
     justify-content: space-between;
+    padding: 0rem 7rem;
+
 }
 
 .description{
     justify-content: space-between;
+    
 }
 .description h1{
     font-size: 5.5rem;
@@ -508,7 +511,18 @@ flex: 0 1 30%;
      /* +++++++++++++++++++ FOR MEDIUM DEVICES +++++++++++++++++++++++++++ */
   
      @media screen and (max-width: 576px) {
-        
+        .home{
+            padding: 0;
+          }
+          .users-panel{
+            padding: 0 0 1rem 5rem;
+          }
+          .users{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+          }
         .navbarRight{
             display: none;
         }
@@ -536,9 +550,7 @@ flex: 0 1 30%;
      /* +++++++++++++++++++++ FOR SMALL DEVICES++++++++++++++++++++++++ */
   
      @media screen and (max-width: 375px) {
-      :root{
-  
-      }
+     
       
       .hero{
         height: 143vh;
@@ -549,5 +561,6 @@ flex: 0 1 30%;
      .actif-users{
         margin-top: 2rem;
      }
+
       
      }

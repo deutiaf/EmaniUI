@@ -1,0 +1,130 @@
+.quality{
+    background-color: var(--bg-color-black);
+    margin: 0;
+    overflow: hidden;
+}
+.quality1{
+    width: 60%;
+    margin: auto;
+
+}
+.quality1 p{
+    color: var(--text-color-gray);
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.quality h3{
+    color: var(--text-color-white);
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+
+/* +++++++++++++++++++++++++++++ QUALITY 2   ++++++++++++++++++++++++++++++ */
+.quality2 > div{
+    flex: 1 1 50%;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    height: 35rem;
+}
+.quality2 h3{
+    font-size: 2rem;
+    padding-right: 6rem;
+    text-align: left;
+    line-height: 2rem;
+    margin-bottom: 0rem;
+    color: var(--text-color-black2);
+}
+.quality2 p{
+    font-weight: 600;
+    color: var(--text-color-black2);
+
+
+}
+.quality2{
+    padding: 3rem 8rem;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.quality2 >div:first-of-type{
+    background-color: var(--bg-color-green);
+    padding-bottom: 0;
+    transform: translateX(-150%) rotate(-15deg);
+    transform-origin: left bottom ;
+    
+}
+.svgCard1{
+    width: min-content;
+   margin: auto;
+   padding: 0;
+   margin-top: 4rem;
+}
+
+.quality2 >div:last-of-type{
+    background-color: var(--bg-color-black2);
+    padding-bottom: 0;
+    transform:  translateX(180%) rotate(15deg) ;
+    transform-origin: right bottom;
+    
+
+}
+.quality2> div:last-of-type h3{
+    font-size: 2rem;
+    padding-right: 0rem;
+   
+    color: var(--text-color-white);
+}
+.quality2> div:last-of-type p{
+    color: var(--text-color-green);
+}
+.img{
+    margin-top: 4rem;
+
+}
+
+.siuuu1{
+    animation: siuuu 2s forwards cubic-bezier(0.6,-0.54, 0.94,-0.26);
+}
+.siuuu2{
+    animation: siuuu2 2s forwards cubic-bezier(0.6,-0.54, 0.94,-0.26) 0.2s;
+}
+
+@keyframes siuuu{
+    0%{
+
+    }
+    60%{
+        transform: translateX(0) rotate(-15deg)
+        
+    }
+    60%{
+        transform: translateX(0) rotate(-15deg)
+    }
+    100%{
+        transform: translateX(0) rotate(0deg)
+
+    }
+}
+@keyframes siuuu2{
+    0%{
+
+    }
+    30%{
+        transform: translateX(0) rotate(15deg)
+        
+    }
+    60%{
+        transform: translateX(0) rotate(15deg)
+    }
+    100%{
+        transform: translateX(0) rotate(0deg)
+
+    }
+}
+.siuuuOpacity{
+    transition: 1s;
+    opacity: 0;
+}
