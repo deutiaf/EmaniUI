@@ -107,6 +107,9 @@ button{
     main{
         overflow-x: hidden;
     }
+     h3{
+      font-size: 2rem !important;
+  }
    }
    /* +++++++++++++++++++++ FOR SMALL DEVICES++++++++++++++++++++++++ */
 
