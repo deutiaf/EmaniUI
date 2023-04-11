@@ -147,7 +147,10 @@ const Quality = () => {
                         <img src={q4c2} alt="" />
                     </div>      
             </div>
-            <div className="quality5"></div>
+            <div className="quality5">
+              <h3>Control all your spend with smart rules</h3>
+              
+            </div>
         </section>
     )
 }
